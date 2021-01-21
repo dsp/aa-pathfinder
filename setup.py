@@ -2,7 +2,7 @@ import os
 
 from setuptools import find_packages, setup
 
-from example import __version__
+from pathfinder import __version__
 
 # read the contents of your README file
 this_directory = os.path.abspath(os.path.dirname(__file__))
@@ -13,16 +13,16 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name="allianceauth-example-plugin",
+    name="aa-pathfinder",
     version=__version__,
     packages=find_packages(),
     include_package_data=True,
     license="MIT",
-    description="Example plugin app for Alliance Auth",
+    description="Connect Alliance Auth to Pathfinder",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="John Doe",
-    author_email="john.doe@example.com",
+    author="Danilaw",
+    author_email="danilaw@rekkingcrew.org",
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
