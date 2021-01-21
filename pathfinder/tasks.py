@@ -33,6 +33,7 @@ def sync_characters():
             character_id = char.character.character_id
             f.write(str.encode(f"{character_id:d}\n"))
         os.replace(f.name, PATHFINDER_WHITELIST)
+        os.chmod(PATHFINDER_WHITELIST, 0o666)
 
 @shared_task
 def sync(): 
